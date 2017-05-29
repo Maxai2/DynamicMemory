@@ -44,9 +44,9 @@ void addElementByTheLink(int *&arr, int &size, int num, int lnk)
 		temp[i] = arr[i];
 	}
 	temp[lnk] = num;
-	for (int i = lnk + 1; i < size - 1; i++)
+	for (int i = lnk + 1; i < size; i++)
 	{
-		temp[i] = arr[i];
+		temp[i] = arr[i - 1];
 	}
 	delete[]arr;
 	arr = temp;
@@ -61,7 +61,7 @@ void removeElementByTheLink(int *&arr, int &size, int lnk)
 		temp[i] = arr[i];
 	}
 
-	for (int i = lnk + 1; i < size; i++)
+	for (int i = lnk; i < size; i++)
 	{
 		temp[i] = arr[i + 1];
 	}

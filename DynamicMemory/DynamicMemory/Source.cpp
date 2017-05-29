@@ -48,9 +48,13 @@ int main()
 	cout << "\nInput link of array: ";
 	int lnk;
 	cin >> lnk;
-	addElementByTheLink(arr, size, num, lnk);
+	addElementByTheLink(arr, size, num, --lnk);
 	show(arr, size);
 
+	cout << "\n\nInput link of array which is delete: ";
+	cin >> lnk;
+	removeElementByTheLink(arr, size, --lnk);
+	show(arr, size);
 	cout << endl;
 	//deleteFunc(arr);
 	
