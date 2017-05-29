@@ -1,4 +1,7 @@
 #pragma once
 
-void initialArr(int length);
-void sortSize(byte size, short &vShort, int &vInt, double &vDouble);
+void fillingArr(int *arr, int size, int min, int max);
+void addAndInsertToEnd(int *&arr, int &size, int num);
+void addElementByTheLink(int *&arr, int &size, int num, int lnk);
+void show(int *arr, int size);
+void deleteFunc(int *arr);
